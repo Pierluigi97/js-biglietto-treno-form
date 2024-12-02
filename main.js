@@ -27,4 +27,19 @@ Potete scegliere di implementare una soluzione completamente diversa oppure simi
 
 */
 
+// Seleziono gli elementi del form
+const nameField = document.getElementById('name-field');
+const kmField = document.getElementById('km-field');
+const ageField = document.getElementById('età-field');
 
+// Seleziono gli elementi target
+const name = document.getElementById('name')
+
+const form = document.querySelector('form');
+
+form.addEventListener('submit', (event) =>{
+    event.preventDefault();
+    console.log(event);
+    name.innerText = nameField.value.trim();
+ 
+} )
